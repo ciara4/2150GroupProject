@@ -51,7 +51,7 @@ class HUD {
     void draw(Canvas c, Paint p, GameState gs) {
 
         // Draw the HUD
-        p.setColor(Color.argb(255, 255, 255, 255));
+        p.setColor(Color.argb(255, 0, 0, 0));
         p.setTextSize(mTextFormatting);
         c.drawText("Hi: " + gs.getHighScore(), mTextFormatting, mTextFormatting, p);
         c.drawText("Scrore: " + gs.getScore(), mTextFormatting, mTextFormatting * 2, p);
@@ -70,7 +70,7 @@ class HUD {
     }
 
     private void drawControls(Canvas c, Paint p) {
-        p.setColor(Color.argb(100, 255, 255, 255));
+        p.setColor(Color.argb(100, 10, 10, 10));
 
         for (Rect r : controls) {
             c.drawRect(r.left, r.top, r.right, r.bottom, p);

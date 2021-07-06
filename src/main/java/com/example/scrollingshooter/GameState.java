@@ -51,7 +51,7 @@ final class GameState {
 
     void startNewGame() {
         mScore = 0;
-        mNumShips = 3;
+        mNumShips = 10;
 
         // Don't want to be drawing objects while deSpawnReSpawn is clearing them and spawning them again
         stopDrawing();
